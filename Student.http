@@ -1,0 +1,61 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+###
+
+GET http://localhost:8080/api/v1/student/get
+
+###
+
+GET http://localhost:8080/api/v1/student/get/1
+
+###
+
+GET http://localhost:8080/api/v1/student/getStudentsDTONameAndMajor
+
+
+####
+
+POST http://localhost:8080/api/v1/student/add
+Content-Type: application/json
+
+{
+  "name": "hussam",
+  "age": 33,
+  "major": "Java"
+}
+
+
+######
+
+
+PUT http://localhost:8080/api/v1/student/update
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Jane Doe",
+  "age": 23,
+  "major": "IT"
+}
+
+###
+
+GET http://localhost:8080/api/v1/student/changeMajor/1/IT
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "Jane Doe",
+  "age": 23,
+  "major": "java"
+}
+
+####
+
+DELETE http://localhost:8080/api/v1/student/delete/3
+
+###
+
+GET http://localhost:8080/api/v1/student/assignStudent/1/1

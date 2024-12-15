@@ -1,0 +1,26 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+###
+
+GET localhost:8080/api/v1/course/get
+
+###
+GET http://localhost:8080/api/v1/course/getTeacherNameByCourseId/4
+
+###
+
+POST localhost:8080/api/v1/course/add/1
+Content-Type: application/json
+
+{
+  "name": "PHP"
+
+}
+
+###
+
+DELETE http://localhost:8080/api/v1/course/delete/1/2
+
+###

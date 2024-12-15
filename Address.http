@@ -1,0 +1,16 @@
+
+###
+
+GET http://localhost:8081/api/v1/address/get
+
+###
+
+POST http://localhost:8081/api/v1/address/add
+Content-Type: application/json
+
+{
+  "area": "T1",
+  "buildingNumber": 222,
+  "street": "sdfsfs",
+   "teacher_id": 1
+}
